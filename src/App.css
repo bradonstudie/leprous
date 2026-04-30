@@ -1,0 +1,13 @@
+@import url("https://use.typekit.net/bdf6cab.css");
+@import "tailwindcss";
+
+* {
+  font-family: "Arial Narrow", sans-serif;
+  /* -webkit-text-stroke: 1px inherit; */
+}
+
+/* Utilities */
+.text-vertical {
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+}
