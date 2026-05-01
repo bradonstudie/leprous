@@ -1,13 +1,26 @@
+/* Arial Narrow Font */
 @import url("https://use.typekit.net/bdf6cab.css");
+/* Prestige Elite Font */
+@import url("https://use.typekit.net/bdf6cab.css");
+/* Tailwind */
 @import "tailwindcss";
 
 * {
   font-family: "Arial Narrow", sans-serif;
-  /* -webkit-text-stroke: 1px inherit; */
+  -webkit-text-stroke: 1px currentColor;
 }
 
-/* Utilities */
-.text-vertical {
-  text-orientation: upright;
-  writing-mode: vertical-rl;
+body {
+  background-image: url("/src/assets/barbwire.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+.font-prestige {
+  font-family: "prestige-elite-std", monospace;
+  font-weight: 400;
+  font-style: normal;
 }

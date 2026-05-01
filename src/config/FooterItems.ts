@@ -20,15 +20,18 @@ export const FooterItemsRight: MenuLink[] = [
     label: "Instagram",
     id: "link-instagram",
     href: "https://www.instagram.com/bradon_studebaker",
+    sortOrder: 1,
   },
   {
     label: "GitHub",
     id: "link-github",
     href: "https://github.com/bradonstudie",
+    sortOrder: 2,
   },
   {
     label: "LinkedIn",
     id: "link-linkedin",
     href: "https://www.linkedin.com/in/bradonstudebaker/",
+    sortOrder: 3,
   },
 ];

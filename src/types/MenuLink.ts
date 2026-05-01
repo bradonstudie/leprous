@@ -1,5 +1,6 @@
-import type { MenuItem } from ".";
+import type { MenuItem, Sortable } from ".";
 
-export type MenuLink = MenuItem & {
-  href: string;
-};
+export type MenuLink = MenuItem &
+  Sortable & {
+    href: string;
+  };
