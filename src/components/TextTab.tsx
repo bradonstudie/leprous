@@ -3,6 +3,9 @@ type PropTypes = {
   id?: string;
 };
 
+/**
+ * @deprecated
+ */
 export const TextTab = ({ label, id }: PropTypes) => (
   <div className="px-3 uppercase flex justify-between items-center">
     <div>
