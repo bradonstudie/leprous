@@ -11,4 +11,9 @@ export const MEDIA = {
     isFlyer: url("is-flyer.webp"),
     pointFlyer: url("point-flyer.webp"),
   },
+  immortalTorment: {
+    titf: url("titf.webp"),
+    logo: url("it-logo.webp"),
+    webMock: url("it-web-mock.webp"),
+  },
 } as const;

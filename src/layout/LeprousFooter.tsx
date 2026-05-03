@@ -10,7 +10,12 @@ export const LeprousFooter = () => (
     <ul className="text-right">
       {FooterItemsRight.map((footerItem) => (
         <li key={footerItem.id}>
-          <a href={footerItem.href} target="_blank" rel="noopener">
+          <a
+            href={footerItem.href}
+            target="_blank"
+            rel="noopener"
+            className="underline decoration-2 decoration-dashed"
+          >
             {footerItem.label}
           </a>
         </li>

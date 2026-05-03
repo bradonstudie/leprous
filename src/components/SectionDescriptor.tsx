@@ -5,6 +5,7 @@ type PropTypes = {
   subtitle: string;
   skills: string[];
   description: string;
+  websiteUrl?: string;
 };
 
 export const SectionDescriptor = ({
@@ -12,6 +13,7 @@ export const SectionDescriptor = ({
   subtitle,
   skills,
   description,
+  websiteUrl,
 }: PropTypes) => (
   <div className="text-center mt-3">
     <h2 className="uppercase text-lg">
@@ -23,5 +25,14 @@ export const SectionDescriptor = ({
       ))}
     </div>
     <p>{description}</p>
+    {websiteUrl && (
+      <a
+        href={websiteUrl}
+        target="_blank"
+        className="underline decoration-2 decoration-dashed"
+      >
+        {websiteUrl}
+      </a>
+    )}
   </div>
 );

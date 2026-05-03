@@ -7,7 +7,7 @@ export const LeprousNavigation = () => (
         <li key={navItem.id}>
           <a
             href={navItem.href}
-            className="border-2 border-dashed rounded-full px-3 py-1 text-md uppercase hover:text-gray-600 transition-colors"
+            className="border-2 border-dashed rounded-full px-3 py-1 text-md uppercase hover:text-white hover:bg-black transition-all duration-350"
           >
             {navItem.label}
           </a>

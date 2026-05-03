@@ -16,6 +16,7 @@ function App() {
       <div className="flex flex-col items-center mt-3">
         {/* <GlobeSpin /> */}
         <h1 className="uppercase text-xl mt-1">Bradon Studebaker</h1>
+        <p>Designer & Engineer • Baltimore, Maryland</p>
         <LeprousNavigation />
       </div>
 
@@ -23,8 +24,8 @@ function App() {
       <section id="look">
         <HumanShieldSection />
         <FlyerSection />
-        <BludgeonedByDeformitySection />
         <ImmortalTormentSection />
+        <BludgeonedByDeformitySection />
       </section>
 
       {/* About */}
