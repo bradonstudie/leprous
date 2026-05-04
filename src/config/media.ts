@@ -16,4 +16,14 @@ export const MEDIA = {
     logo: url("it-logo.webp"),
     webMock: url("it-web-mock.webp"),
   },
+  bbd: {
+    hoodie: url("bludgeoned-hoodie.webp"),
+    shirtFront: url("bludgeoned-shirt-front.webp"),
+    shirtBack: url("bludgeoned-shirt-back.webp"),
+    longsleeve: url("bludgeoned-ls.webp"),
+    tapeLayout: url("bludgeoned-tape-layout.webp"),
+    tapeLayoutFront: url("bludgeoned-tape-layout-front.webp"),
+    sticker: url("bludgeoned-sticker.webp"),
+    promoFlyer: url("bludgeoned-promo.webp"),
+  },
 } as const;

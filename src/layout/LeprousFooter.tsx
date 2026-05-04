@@ -1,3 +1,4 @@
+import { ExternalLink } from "../components/ExternalLink";
 import { FooterItemsLeft, FooterItemsRight } from "../config";
 
 export const LeprousFooter = () => (
@@ -10,14 +11,7 @@ export const LeprousFooter = () => (
     <ul className="text-right">
       {FooterItemsRight.map((footerItem) => (
         <li key={footerItem.id}>
-          <a
-            href={footerItem.href}
-            target="_blank"
-            rel="noopener"
-            className="underline decoration-2 decoration-dashed"
-          >
-            {footerItem.label}
-          </a>
+          <ExternalLink href={footerItem.href} text={footerItem.label} />
         </li>
       ))}
     </ul>

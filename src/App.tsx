@@ -1,4 +1,5 @@
 import "./App.css";
+import { GlobeSpin } from "./components/GlobeSpin";
 
 import { LeprousFooter } from "./layout/LeprousFooter";
 import { LeprousNavigation } from "./layout/LeprousNavigation";
@@ -13,19 +14,21 @@ function App() {
   return (
     <>
       {/* Navigation */}
-      <div className="flex flex-col items-center mt-3">
-        {/* <GlobeSpin /> */}
-        <h1 className="uppercase text-xl mt-1">Bradon Studebaker</h1>
+      <div className="flex flex-col items-center mt-3 h-screen">
+        <GlobeSpin />
+        <h1 className="uppercase text-2xl overflow-hidden whitespace-nowrap mx-auto">
+          Bradon Studebaker
+        </h1>
         <p>Designer & Engineer • Baltimore, Maryland</p>
         <LeprousNavigation />
       </div>
 
       {/* Projects */}
-      <section id="look">
+      <section id="works">
         <HumanShieldSection />
         <FlyerSection />
-        <ImmortalTormentSection />
         <BludgeonedByDeformitySection />
+        <ImmortalTormentSection />
       </section>
 
       {/* About */}

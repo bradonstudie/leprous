@@ -3,5 +3,5 @@ type PropTypes = {
 };
 
 export const TextTag = ({ children }: PropTypes) => (
-  <p className="border-2 border-dashed px-2 rounded-full text-sm">{children}</p>
+  <p className="px-2 border-2 border-dashed rounded-full text-sm">{children}</p>
 );

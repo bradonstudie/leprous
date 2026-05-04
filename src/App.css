@@ -10,17 +10,35 @@
   -webkit-text-stroke: 1px currentColor;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("/src/assets/barbwire.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  scroll-behavior: smooth;
 }
 
 .font-prestige {
   font-family: "prestige-elite-std", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+/* The typing effect — types over 3.5s (35% of 10s cycle), holds, then resets */
+@keyframes typing {
+  0% {
+    width: 0;
+    animation-timing-function: steps(40, end);
+  }
+  35% {
+    width: 100%;
+    animation-timing-function: step-end;
+  }
+  100% {
+    width: 0;
+  }
 }
