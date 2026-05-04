@@ -1,5 +1,5 @@
-import { MEDIA } from "../config";
-import { SectionDescriptor } from "../components/SectionDescriptor";
+import { MEDIA } from "@/config";
+import { SectionDescriptor } from "@/components/SectionDescriptor";
 
 export const FlyerSection = () => (
   <section className="px-3 w-full">
@@ -11,7 +11,7 @@ export const FlyerSection = () => (
     />
 
     <div className="flex justify-center mt-3">
-      <div className="grid grid-cols-3 gap-3 max-w-6xl">
+      <div className="grid grid-cols-3 gap-3">
         <div className="col-span-3 md:col-span-1">
           <img
             src={MEDIA.flyers.isFlyer}

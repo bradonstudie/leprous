@@ -1,14 +1,11 @@
+import { Route, Switch } from "wouter";
 import "./App.css";
 import { GlobeSpin } from "./components/GlobeSpin";
 
 import { LeprousFooter } from "./layout/LeprousFooter";
 import { LeprousNavigation } from "./layout/LeprousNavigation";
-
-import { AboutSection } from "./sections/AboutSection";
-import { BludgeonedByDeformitySection } from "./sections/BludgeonedByDeformitySection";
-import { FlyerSection } from "./sections/FlyerSection";
-import { HumanShieldSection } from "./sections/HumanShieldSection";
-import { ImmortalTormentSection } from "./sections/ImmortalTormentSection";
+import { Home } from "./pages/home/Home";
+import { About } from "./pages/about/About";
 
 function App() {
   return (
@@ -23,18 +20,10 @@ function App() {
         <LeprousNavigation />
       </div>
 
-      {/* Projects */}
-      <section id="works">
-        <HumanShieldSection />
-        <FlyerSection />
-        <BludgeonedByDeformitySection />
-        <ImmortalTormentSection />
-      </section>
-
-      {/* About */}
-      <AboutSection />
-
-      {/* Gallery */}
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+      </Switch>
 
       {/* Footer */}
       <LeprousFooter />

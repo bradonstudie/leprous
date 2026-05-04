@@ -1,22 +1,22 @@
-import type { MenuLink } from "../types";
+import type { MenuLink } from "@/types";
 
 export const NavItems: MenuLink[] = [
   {
-    label: "Works",
-    href: "#works",
-    id: "works-link",
+    label: "Projects",
+    href: "/",
+    id: "projects-link",
     sortOrder: 1,
   },
   {
     label: "About",
-    href: "#about",
+    href: "/about",
     id: "about-link",
-    sortOrder: 3,
+    sortOrder: 2,
   },
   {
-    label: "Contact",
-    href: "#about",
+    label: "Gallery",
+    href: "#gallery",
     id: "contact-link",
-    sortOrder: 2,
+    sortOrder: 3,
   },
 ];

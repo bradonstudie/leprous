@@ -17,7 +17,11 @@ export const SectionDescriptor = ({
   websiteUrl,
 }: PropTypes) => (
   <div className="flex justify-center px-3">
-    <div className="text-center mt-15 border-2 border-dashed w-fit px-5 py-1 hover:bg-black hover:text-white transition-all duration-500">
+    <div
+      className="border-2 border-dashed rounded-none text-center md:w-xl w-full mt-15 px-5 py-1 
+      hover:bg-black hover:text-white hover:rounded-[10px] 
+      transition-all duration-300 ease-in"
+    >
       <h2 className="uppercase text-xl">
         {title} - <i>{subtitle}</i>
       </h2>

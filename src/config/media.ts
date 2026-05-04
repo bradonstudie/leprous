@@ -26,4 +26,8 @@ export const MEDIA = {
     sticker: url("bludgeoned-sticker.webp"),
     promoFlyer: url("bludgeoned-promo.webp"),
   },
+  cleanseTheSoul: {
+    logo: url("cleanse-logo.webp"),
+    flyer: url("cleanse-flyer.webp"),
+  },
 } as const;

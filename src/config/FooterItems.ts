@@ -1,4 +1,4 @@
-import type { MenuItem, MenuLink } from "../types";
+import type { MenuItem, MenuLink } from "@/types";
 
 export const FooterItemsLeft: MenuItem[] = [
   {

@@ -1,5 +1,5 @@
-import { ExternalLink } from "../components/ExternalLink";
-import { FooterItemsLeft, FooterItemsRight } from "../config";
+import { ExternalLink } from "@/components/ExternalLink";
+import { FooterItemsLeft, FooterItemsRight } from "@/config";
 
 export const LeprousFooter = () => (
   <footer className="w-full flex justify-between my-3 px-3">

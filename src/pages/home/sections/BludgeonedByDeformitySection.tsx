@@ -1,5 +1,5 @@
-import { SectionDescriptor } from "../components/SectionDescriptor";
-import { MEDIA } from "../config";
+import { SectionDescriptor } from "@/components/SectionDescriptor";
+import { MEDIA } from "@/config";
 
 export const BludgeonedByDeformitySection = () => (
   <section>
@@ -7,7 +7,7 @@ export const BludgeonedByDeformitySection = () => (
       title="Bludgeoned by Deformity"
       subtitle="Epoch of Immorality"
       skills={["Logo", "Design"]}
-      description="Full visual identity for my band Bludgeoned by Deformity and its accompanying EP rollout"
+      description="Full visual identity for the Baltimore death metal band Bludgeoned by Deformity and its accompanying EP rollout"
     />
 
     <div className="grid grid-cols-3 gap-3 md:px-3">
