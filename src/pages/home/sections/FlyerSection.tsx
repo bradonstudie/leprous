@@ -1,15 +1,13 @@
-import { MEDIA } from "@/config";
 import { SectionDescriptor } from "@/components/SectionDescriptor";
+import { MEDIA } from "@/config";
 
 export const FlyerSection = () => (
-  <section className="px-3 w-full">
-    <SectionDescriptor
-      title="Illustrated Flyer Series"
-      subtitle="2025 to 2026"
-      skills={["Logo", "Illustration", "Design"]}
-      description="A series of three hand illustrated and designed flyers"
-    />
-
+  <SectionDescriptor
+    title="Illustrated Flyer Series"
+    subtitle="2025 to 2026"
+    skills={["Logo", "Illustration", "Design"]}
+    description="A series of three hand illustrated and designed flyers"
+  >
     <div className="flex justify-center mt-3">
       <div className="grid grid-cols-3 gap-3">
         <div className="col-span-3 md:col-span-1">
@@ -32,5 +30,5 @@ export const FlyerSection = () => (
         </div>
       </div>
     </div>
-  </section>
+  </SectionDescriptor>
 );

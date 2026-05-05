@@ -13,10 +13,4 @@ export const NavItems: MenuLink[] = [
     id: "about-link",
     sortOrder: 2,
   },
-  {
-    label: "Gallery",
-    href: "#gallery",
-    id: "contact-link",
-    sortOrder: 3,
-  },
 ];

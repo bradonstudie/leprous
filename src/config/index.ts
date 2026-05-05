@@ -1,5 +1,5 @@
 import { FooterItemsLeft, FooterItemsRight } from "./FooterItems";
-import { NavItems } from "./NavItems";
 import { MEDIA } from "./media";
+import { NavItems } from "./NavItems";
 
-export { FooterItemsLeft, FooterItemsRight, NavItems, MEDIA };
+export { FooterItemsLeft, FooterItemsRight, MEDIA, NavItems };

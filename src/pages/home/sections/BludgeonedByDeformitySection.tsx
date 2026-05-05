@@ -2,14 +2,13 @@ import { SectionDescriptor } from "@/components/SectionDescriptor";
 import { MEDIA } from "@/config";
 
 export const BludgeonedByDeformitySection = () => (
-  <section>
-    <SectionDescriptor
-      title="Bludgeoned by Deformity"
-      subtitle="Epoch of Immorality"
-      skills={["Logo", "Design"]}
-      description="Full visual identity for the Baltimore death metal band Bludgeoned by Deformity and its accompanying EP rollout"
-    />
-
+  <SectionDescriptor
+    title="Bludgeoned by Deformity"
+    subtitle="Epoch of Immorality"
+    skills={["Logo", "Illustration", "Design"]}
+    description="Full visual identity for the Baltimore death metal band Bludgeoned by Deformity and its accompanying EP rollout"
+    websiteUrl="https://ironfortressrecords.bandcamp.com/album/epoch-of-immorality"
+  >
     <div className="grid grid-cols-3 gap-3 md:px-3">
       <div className="col-span-4 md:col-span-1">
         <img
@@ -59,5 +58,5 @@ export const BludgeonedByDeformitySection = () => (
         />
       </div>
     </div>
-  </section>
+  </SectionDescriptor>
 );

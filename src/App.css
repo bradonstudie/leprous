@@ -1,6 +1,4 @@
-/* Arial Narrow Font */
-@import url("https://use.typekit.net/bdf6cab.css");
-/* Prestige Elite Font */
+/* Arial Narrow, Prestige Elite */
 @import url("https://use.typekit.net/bdf6cab.css");
 /* Tailwind */
 @import "tailwindcss";
@@ -15,11 +13,23 @@ html {
 }
 
 body {
-  background-image: url("/src/assets/barbwire.jpg");
+  z-index: -100000;
+  background-image: url("./assets/spiral.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* BG Grain */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .font-prestige {
@@ -42,3 +52,5 @@ body {
     width: 0;
   }
 }
+
+/* Disk */
