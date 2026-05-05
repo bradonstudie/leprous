@@ -7,6 +7,7 @@ export const CleanseTheSoulSection = () => (
     subtitle="Self Titled"
     skills={["Logo", "Design"]}
     description="Logo and promotional flyer for Columbus power violence band Cleanse the Soul"
+    projectId="cleanse-the-soul"
   >
     <div className="flex md:flex-row flex-col items-top justify-center">
       <div className="md:w-xl p-3">

@@ -7,6 +7,7 @@ export const FlyerSection = () => (
     subtitle="2025 to 2026"
     skills={["Logo", "Illustration", "Design"]}
     description="A series of three hand illustrated and designed flyers"
+    projectId="flyer-series"
   >
     <div className="flex justify-center mt-3">
       <div className="grid grid-cols-3 gap-3">

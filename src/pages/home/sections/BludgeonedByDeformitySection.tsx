@@ -8,6 +8,7 @@ export const BludgeonedByDeformitySection = () => (
     skills={["Logo", "Illustration", "Design"]}
     description="Full visual identity for the Baltimore death metal band Bludgeoned by Deformity and its accompanying EP rollout"
     websiteUrl="https://ironfortressrecords.bandcamp.com/album/epoch-of-immorality"
+    projectId="bludgeoned-by-deformity"
   >
     <div className="grid grid-cols-3 gap-3 md:px-3">
       <div className="col-span-4 md:col-span-1">

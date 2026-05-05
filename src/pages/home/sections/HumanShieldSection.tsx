@@ -8,6 +8,7 @@ export const HumanShieldSection = () => (
     skills={["Logo", "Illustration", "Design"]}
     description="Logo and longsleeve design for the Tennessee power violence band Human Shield"
     websiteUrl="https://humanshieldtn.bandcamp.com/"
+    projectId="human-shield"
   >
     <div className="flex md:flex-row flex-col items-center justify-center">
       <div className="md:w-2xl p-3">

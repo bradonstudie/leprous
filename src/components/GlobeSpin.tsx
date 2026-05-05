@@ -1,7 +1,7 @@
-import Head from "@/assets/head.gif";
+import Head from "@/assets/sphere.gif";
 
 export const GlobeSpin = () => (
-  <div className="">
-    <img src={Head} alt="Rotating globe animation" className="w-[50px]" />
+  <div className="relative inline-flex items-center justify-center">
+    <img src={Head} alt="Rotating globe animation" className="w-[20em]" />
   </div>
 );
