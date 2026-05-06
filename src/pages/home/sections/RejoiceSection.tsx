@@ -1,14 +1,13 @@
 import { SectionDescriptor } from "@/components/SectionDescriptor";
 import { MEDIA } from "@/config";
 
-export const HumanShieldSection = () => (
+export const RejoiceSection = () => (
   <SectionDescriptor
-    title="Human Shield"
-    subtitle="Onto Cement"
+    title="Rejoice"
+    subtitle="All of Heaven's Luck"
     skills={["Logo", "Illustration", "Design"]}
-    description="Logo and longsleeve design for Tennessee power violence band Human Shield"
-    websiteUrl="https://humanshieldtn.bandcamp.com/"
-    projectId="human-shield"
+    description="Merch line for Columbus hardcore band Rejoice's Fall 2024 Tour"
+    projectId="rejoice"
   >
     <div className="flex md:flex-row flex-col items-center justify-center">
       <div className="md:w-2xl p-3">

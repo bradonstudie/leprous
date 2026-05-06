@@ -27,6 +27,12 @@ export const DirectoryItems: DirectoryItem[] = [
   },
   {
     sortOrder: 4,
+    name: "Rejoice",
+    projectTitle: "All of Heaven's Luck",
+    href: "rejoice",
+  },
+  {
+    sortOrder: 5,
     name: "Immortal Torment",
     projectTitle: "Tender is the Flesh",
     href: "immortal-torment",

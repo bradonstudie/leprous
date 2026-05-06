@@ -6,7 +6,7 @@ export const ImmortalTormentSection = () => (
     title="Immortal Torment"
     subtitle="Tender is the Flesh"
     skills={["Logo", "Design", "Engineering"]}
-    description="Album artwork and logo design for the Columbus grind band Immortal Torment with an accompanying website"
+    description="Album artwork and logo design for Columbus grind band Immortal Torment with an accompanying website"
     websiteUrl="https://www.immortaltorment.com"
     projectId="immortal-torment"
   >

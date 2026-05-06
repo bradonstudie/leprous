@@ -1,4 +1,4 @@
-import type { PROJECT_ID } from "@/config/ProjectId";
+import type { PROJECT_ID } from "./ProjectId";
 import type { DirectoryItem } from "./DirectoryItem";
 import type { MenuItem } from "./MenuItem";
 import type { MenuLink } from "./MenuLink";

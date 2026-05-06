@@ -4,6 +4,7 @@ const ProjectId = {
   FLYER_SERIES: "flyer-series",
   HUMAN_SHIELD: "human-shield",
   IMMORTAL_TORMENT: "immortal-torment",
+  REJOICE: "rejoice",
 } as const;
 
 export type PROJECT_ID = (typeof ProjectId)[keyof typeof ProjectId];

@@ -4,10 +4,10 @@ type PropTypes = {
   directoryItems: DirectoryItem[];
 };
 
-export const DirectorySection = ({ directoryItems }: PropTypes) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-    <div className="border-2 border-dashed order-2 md:order-1 text-lg">
-      <div className="border-b-2 border-dashed px-3 uppercase">Projects</div>
+export const ProjectDirectory = ({ directoryItems }: PropTypes) => (
+  <div className="flex justify-center mt-10">
+    <div className="border-2 border-dashed text-lg w-full md:max-w-[80vw]">
+      <div className="border-b-2 border-dashed px-3 uppercase">Directory</div>
       <table className="w-full">
         <tbody>
           {directoryItems
@@ -25,7 +25,7 @@ export const DirectorySection = ({ directoryItems }: PropTypes) => (
                 >
                   <a
                     href={`#${directoryItem.href}`}
-                    className="block pl-6 pr-3 w-full"
+                    className="block pl-8 pr-3 w-full"
                   >
                     {directoryItem.name} - <i>"{directoryItem.projectTitle}"</i>
                   </a>
@@ -35,6 +35,5 @@ export const DirectorySection = ({ directoryItems }: PropTypes) => (
         </tbody>
       </table>
     </div>
-    <div className="order-1 md:order-2">{/* TODO: Art Here */}</div>
   </div>
 );
