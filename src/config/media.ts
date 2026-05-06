@@ -30,4 +30,9 @@ export const MEDIA = {
     logo: url("cleanse-logo.webp"),
     flyer: url("cleanse-flyer.webp"),
   },
+  rejoice: {
+    shirtFront: url("rejoice-shirt-front.webp"),
+    shirtBack: url("rejoice-shirt-back.webp"),
+    sticker: url("rejoice-stickers.webp"),
+  },
 } as const;

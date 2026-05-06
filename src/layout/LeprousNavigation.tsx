@@ -42,7 +42,10 @@ export const LeprousNavigation = ({ navItems }: PropTypes) => (
             </li>
           ))}
         <li className="basis-full md:basis-auto text-center md:text-left">
-          <a href="mailto:bradon.studebaker@gmail.com">
+          <a
+            href="mailto:bradon.studebaker@gmail.com"
+            className="bg-black text-white px-2"
+          >
             bradon.studebaker@gmail.com
           </a>
         </li>
