@@ -7,8 +7,8 @@ export const ExternalLink = ({ href, text }: PropTypes) => (
   <a
     href={href}
     target="_blank"
-    rel="noopener"
-    className="border-b-2 border-dashed"
+    rel="noopener noreferrer"
+    className="underline decoration-dashed decoration-2"
   >
     {text}
   </a>

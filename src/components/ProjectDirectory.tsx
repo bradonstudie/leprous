@@ -25,9 +25,13 @@ export const ProjectDirectory = ({ directoryItems }: PropTypes) => (
                 >
                   <a
                     href={`#${directoryItem.href}`}
-                    className="block pl-8 pr-3 w-full"
+                    className="block pl-8 pr-3 w-full flex justify-between items-center"
                   >
-                    {directoryItem.name} - <i>"{directoryItem.projectTitle}"</i>
+                    <span>
+                      {directoryItem.name} -{" "}
+                      <i>"{directoryItem.projectTitle}"</i>
+                    </span>
+                    <span className="text-sm">↓</span>
                   </a>
                 </td>
               </tr>

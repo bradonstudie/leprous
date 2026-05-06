@@ -14,6 +14,7 @@ export const Home = () => (
   <section id="projects" className="md:px-5 px-3">
     <PageHeader text="Projects" />
     <ProjectDirectory directoryItems={DirectoryItems} />
+
     <div>
       <BludgeonedByDeformitySection />
       <CleanseTheSoulSection />

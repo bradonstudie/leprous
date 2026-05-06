@@ -1,4 +1,5 @@
-import { Route, Switch, useRoute } from "wouter";
+import type { ReactNode } from "react";
+import { Route, Switch, useLocation } from "wouter";
 import "@/App.css";
 
 import { LeprousFooter } from "@/layout/LeprousFooter";
@@ -6,30 +7,41 @@ import { LeprousNavigation } from "@/layout/LeprousNavigation";
 
 import { About } from "@/pages/about/About";
 import { Home } from "@/pages/home/Home";
-import { HomeSplashSection } from "@/pages/home/sections/HomeSplashSection";
 
 import { NavItems } from "@/config";
 
+import { HomeSplashSection } from "./components/splash/HomeSplashSection";
+import { AboutSplashSection } from "./components/splash/AboutSplashSection";
+
+type SplashConfig = { node: ReactNode; singleScreen?: boolean };
+
+const splashContent: Record<string, SplashConfig> = {
+  "/": { node: <HomeSplashSection /> },
+  "/about": { node: <AboutSplashSection />, singleScreen: true },
+};
+
 function App() {
-  const [isHome] = useRoute("/");
+  const [location] = useLocation();
+  const config = splashContent[location];
+  const splash = config?.node;
+  const singleScreen = config?.singleScreen ?? false;
 
   return (
     <>
-      {isHome ? (
-        <div className="h-dvh flex flex-col">
-          <LeprousNavigation navItems={NavItems} />
-          <HomeSplashSection />
-        </div>
-      ) : (
+      <div className={splash ? "h-dvh flex flex-col" : undefined}>
         <LeprousNavigation navItems={NavItems} />
-      )}
+        {splash}
+        {singleScreen && <LeprousFooter />}
+      </div>
 
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
+      <main className={splash ? undefined : "min-h-dvh"}>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </main>
 
-      <LeprousFooter />
+      {!singleScreen && <LeprousFooter />}
     </>
   );
 }

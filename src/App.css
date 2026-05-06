@@ -5,7 +5,7 @@
 
 * {
   font-family: "Arial Narrow", sans-serif;
-  -webkit-text-stroke: 1px currentColor;
+  -webkit-text-stroke: 1.5px currentColor;
 }
 
 html {
@@ -14,18 +14,28 @@ html {
 
 body {
   z-index: -100000;
-  background-image: url("./assets/sky.webp");
+  background-image: url("./assets/wildlife.jpeg");
+
+  /* background: radial-gradient(
+    circle at 50% 50%,
+    #deff04 0%,
+    #fb2626 45%,
+    #0161d5 67%,
+    #046dff 70%,
+    #ff0000 100%
+  ); */
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+/* BG Grain */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
-  /* BG Grain */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
   opacity: 0.3;
   pointer-events: none;
@@ -52,5 +62,3 @@ body::after {
     width: 0;
   }
 }
-
-/* Disk */

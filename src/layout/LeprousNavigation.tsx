@@ -18,9 +18,9 @@ export const LeprousNavigation = ({ navItems }: PropTypes) => (
       </div>
 
       <div>
-        <h1 className="uppercase text-2xl overflow-hidden whitespace-nowrap mx-auto text-center md:text-left">
+        <p className="uppercase text-2xl overflow-hidden whitespace-nowrap mx-auto text-center md:text-left">
           Bradon Studebaker
-        </h1>
+        </p>
         <p>Designer & Engineer • Baltimore, Maryland</p>
       </div>
     </div>
