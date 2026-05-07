@@ -1,4 +1,4 @@
-# Leprous — Bradon Studebaker Portfolio
+# Project Leprous — Bradon Studebaker's Design Portfolio
 
 Personal design & engineering portfolio site for Bradon Studebaker. Showcases creative projects spanning merch design, album artwork, flyer series, and web work for various bands and clients.
 

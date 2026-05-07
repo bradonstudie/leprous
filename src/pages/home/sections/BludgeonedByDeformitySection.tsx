@@ -9,53 +9,46 @@ export const BludgeonedByDeformitySection = () => (
     description="Full visual identity for Baltimore death metal band Bludgeoned by Deformity and its accompanying EP rollout"
     websiteUrl="https://ironfortressrecords.bandcamp.com/album/epoch-of-immorality"
     projectId="bludgeoned-by-deformity"
+    rows
   >
-    <div className="grid grid-cols-3 gap-3 md:px-3">
-      <div className="col-span-4 md:col-span-1">
+    <div className="md:flex gap-3">
+      <div className="flex-1">
         <img
           src={MEDIA.bbd.shirtFront}
-          alt="Bludgeoned by Deformity - Front tee shirt design"
+          alt="Bludgeoned by Deformity - front tee shirt design"
         />
       </div>
-      <div className="col-span-4 md:col-span-1">
+      <div className="flex-1">
         <img
           src={MEDIA.bbd.longsleeve}
-          alt="Bludgeoned by Deformity - Long sleeve design"
+          alt="Bludgeoned by Deformity - long sleeve design"
         />
       </div>
-      <div className="col-span-4 md:col-span-1">
+      <div className="flex-1">
         <img
           src={MEDIA.bbd.shirtBack}
-          alt="Bludgeoned by Deformity - Front tee shirt design"
+          alt="Bludgeoned by Deformity - back tee shirt design"
         />
       </div>
     </div>
 
-    <div className="flex md:flex-row flex-col justify-center">
-      <div className="md:w-1/3 p-5">
+    <div className="md:flex gap-3">
+      <div className="flex-1 md:py-0 py-3">
         <img
-          src={MEDIA.bbd.sticker}
-          alt="Bludgeoned by Deformity - Front tee shirt design"
-          className="-rotate-1 border border-white"
-        />
-        <img
-          src={MEDIA.bbd.sticker}
-          alt="Bludgeoned by Deformity - Front tee shirt design"
-          className="-mt-5 rotate-3 border border-white"
-        />
-        <img
-          src={MEDIA.bbd.sticker}
-          alt="Bludgeoned by Deformity - Front tee shirt design"
-          className="-mt-5 -rotate-3 border border-white"
+          src={MEDIA.bbd.promoFlyer}
+          alt="Bludgeoned by Deformity - Iron Fortress promo flyer"
         />
       </div>
-      <div className="md:w-1/3 p-3">
-        <img src={MEDIA.bbd.promoFlyer} alt="Human Shield - longsleeve front" />
-      </div>
-      <div className="md:w-1/3 p-3">
+      <div className="flex-1 md:py-0 py-3">
         <img
           src={MEDIA.bbd.hoodie}
-          alt="Bludgeoned by Deformity - Long sleeve design"
+          alt="Bludgeoned by Deformity - hoodie design"
+        />
+      </div>
+      <div className="flex-1 md:py-0 py-3">
+        <img
+          src={MEDIA.bbd.sticker}
+          alt="Bludgeoned by Deformity - sticker design"
         />
       </div>
     </div>

@@ -9,27 +9,17 @@ export const FlyerSection = () => (
     description="A series of three hand illustrated and designed flyers"
     projectId="flyer-series"
   >
-    <div className="flex justify-center mt-3">
-      <div className="grid grid-cols-3 gap-3">
-        <div className="col-span-3 md:col-span-1">
-          <img
-            src={MEDIA.flyers.isFlyer}
-            alt="Bludgeoned by Deformity tour flyer"
-          />
-        </div>
-        <div className="col-span-3 md:col-span-1">
-          <img
-            src={MEDIA.flyers.bbdFlyer}
-            alt="Bludgeoned by Deformity tour flyer"
-          />
-        </div>
-        <div className="col-span-3 md:col-span-1">
-          <img
-            src={MEDIA.flyers.pointFlyer}
-            alt="Bludgeoned by Deformity tour flyer"
-          />
-        </div>
-      </div>
+    <div className="md:w-1/3">
+      <img src={MEDIA.flyers.isFlyer} alt="Internal Suffering show flyer" />
+    </div>
+    <div className="md:w-1/3">
+      <img
+        src={MEDIA.flyers.bbdFlyer}
+        alt="Bludgeoned by Deformity tour flyer"
+      />
+    </div>
+    <div className="md:w-1/3">
+      <img src={MEDIA.flyers.pointFlyer} alt="Point and Laugh show flyer" />
     </div>
   </SectionDescriptor>
 );

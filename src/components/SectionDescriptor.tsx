@@ -9,6 +9,7 @@ type PropTypes = {
   description: string;
   websiteUrl?: string;
   projectId: PROJECT_ID;
+  rows?: boolean;
   children?: React.ReactNode;
 };
 
@@ -19,13 +20,14 @@ export const SectionDescriptor = ({
   description,
   websiteUrl,
   projectId,
+  rows,
   children,
 }: PropTypes) => (
   <section
     className="flex flex-col items-center px-3 my-15 first:mt-5"
     id={projectId}
   >
-    <div className="border-2 border-dashed rounded-none md:w-xl w-full mt-5 px-5 py-1 text-center">
+    <div className="border-2 border-dashed rounded-none md:w-xl w-full max-w-3xl mt-5 mb-3 px-5 py-1 text-center">
       <h3 className="uppercase text-lg mb-1">
         <span className="bg-black text-white px-3">
           <span className="">{title}</span> - <i>"{subtitle}"</i>
@@ -39,6 +41,10 @@ export const SectionDescriptor = ({
       <p>{description}</p>
       {websiteUrl && <ExternalLink text={websiteUrl} href={websiteUrl} />}
     </div>
-    {children}
+    <div className="max-w-7xl">
+      <div className={`flex ${rows ? "flex-col" : "md:flex-row flex-col"} items-center justify-center gap-3`}>
+        {children}
+      </div>
+    </div>
   </section>
 );

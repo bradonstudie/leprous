@@ -23,7 +23,7 @@ export const MEDIA = {
     longsleeve: url("bludgeoned-ls"),
     tapeLayout: url("bludgeoned-tape-layout"),
     tapeLayoutFront: url("bludgeoned-tape-layout-front"),
-    sticker: url("bludgeoned-sticker"),
+    sticker: url("bludgeoned-stickers"),
     promoFlyer: url("bludgeoned-promo"),
   },
   cleanseTheSoul: {

@@ -10,16 +10,14 @@ export const ImmortalTormentSection = () => (
     websiteUrl="https://www.immortaltorment.com"
     projectId="immortal-torment"
   >
-    <div className="flex md:flex-row flex-col items-center justify-center">
-      <div className="md:w-xl p-3">
-        <img
-          src={MEDIA.immortalTorment.titf}
-          alt="Immortal Torment - Tender is the Flesh cover artwork"
-        />
-      </div>
-      <div className="md:w-xl p-3">
-        <img src={MEDIA.immortalTorment.webMock} alt="Immortal Torment logo" />
-      </div>
+    <div className="md:w-1/3">
+      <img
+        src={MEDIA.immortalTorment.titf}
+        alt="Immortal Torment - Tender is the Flesh cover artwork"
+      />
+    </div>
+    <div className="md:w-1/3">
+      <img src={MEDIA.immortalTorment.webMock} alt="Immortal Torment logo" />
     </div>
   </SectionDescriptor>
 );

@@ -10,19 +10,17 @@ export const HumanShieldSection = () => (
     websiteUrl="https://humanshieldtn.bandcamp.com/"
     projectId="human-shield"
   >
-    <div className="flex md:flex-row flex-col items-center justify-center">
-      <div className="md:w-2xl p-3">
-        <img
-          src={MEDIA.shirts.hsShirtFront}
-          alt="Human Shield - longsleeve front"
-        />
-      </div>
-      <div className="md:w-2xl p-3">
-        <img
-          src={MEDIA.shirts.hsShirtBack}
-          alt="Human Shield - longsleeve back"
-        />
-      </div>
+    <div className="md:w-2xl">
+      <img
+        src={MEDIA.shirts.hsShirtFront}
+        alt="Human Shield - longsleeve front"
+      />
+    </div>
+    <div className="md:w-2xl">
+      <img
+        src={MEDIA.shirts.hsShirtBack}
+        alt="Human Shield - longsleeve back"
+      />
     </div>
   </SectionDescriptor>
 );

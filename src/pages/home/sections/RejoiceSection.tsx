@@ -9,23 +9,20 @@ export const RejoiceSection = () => (
     description="Merch line for Columbus hardcore band Rejoice's Fall 2024 Tour"
     projectId="rejoice"
   >
-    <div className="grid grid-cols-2 gap-3 md:px-3 mt-3">
-      <div className="col-span-2 md:col-span-1">
-        <img
-          src={MEDIA.rejoice.shirtFront}
-          alt="Rejoice - Tee shirt front design"
-        />
-      </div>
-      <div className="col-span-2 md:col-span-1">
-        <img
-          src={MEDIA.rejoice.shirtBack}
-          alt="Rejoice - Tee shirt back design"
-        />
-      </div>
+    <div className="md:w-1/3">
+      <img
+        src={MEDIA.rejoice.shirtFront}
+        alt="Rejoice - Tee shirt front design"
+      />
     </div>
-
-    <div className="md:max-w-xl md:-mt-50">
+    <div className="md:w-1/4">
       <img src={MEDIA.rejoice.sticker} alt="Rejoice - Sticker design" />
+    </div>
+    <div className="md:w-1/3">
+      <img
+        src={MEDIA.rejoice.shirtBack}
+        alt="Rejoice - Tee shirt back design"
+      />
     </div>
   </SectionDescriptor>
 );
