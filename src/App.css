@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  z-index: -1;
+  z-index: -2;
   background-image: url("./assets/wildlife.webp");
   background-size: cover;
   background-position: center;
