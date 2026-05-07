@@ -1,38 +1,41 @@
 const BASE = "https://media.bradonstudebaker.com/v1/photos";
-const url = (path: string) => `${BASE}/${path}`;
+const url = (path: string) => `${BASE}/${path}.webp`;
 
 export const MEDIA = {
   shirts: {
-    hsShirtFront: url("hs-shirt-front.webp"),
-    hsShirtBack: url("hs-shirt-back.webp"),
+    hsShirtFront: url("hs-shirt-front"),
+    hsShirtBack: url("hs-shirt-back"),
   },
   flyers: {
-    bbdFlyer: url("bbd-flyer.webp"),
-    isFlyer: url("is-flyer.webp"),
-    pointFlyer: url("point-flyer.webp"),
+    bbdFlyer: url("bbd-flyer"),
+    isFlyer: url("is-flyer"),
+    pointFlyer: url("point-flyer"),
   },
   immortalTorment: {
-    titf: url("titf.webp"),
-    logo: url("it-logo.webp"),
-    webMock: url("it-web-mock.webp"),
+    titf: url("titf"),
+    logo: url("it-logo"),
+    webMock: url("it-web-mock"),
   },
   bbd: {
-    hoodie: url("bludgeoned-hoodie.webp"),
-    shirtFront: url("bludgeoned-shirt-front.webp"),
-    shirtBack: url("bludgeoned-shirt-back.webp"),
-    longsleeve: url("bludgeoned-ls.webp"),
-    tapeLayout: url("bludgeoned-tape-layout.webp"),
-    tapeLayoutFront: url("bludgeoned-tape-layout-front.webp"),
-    sticker: url("bludgeoned-sticker.webp"),
-    promoFlyer: url("bludgeoned-promo.webp"),
+    hoodie: url("bludgeoned-hoodie"),
+    shirtFront: url("bludgeoned-shirt-front"),
+    shirtBack: url("bludgeoned-shirt-back"),
+    longsleeve: url("bludgeoned-ls"),
+    tapeLayout: url("bludgeoned-tape-layout"),
+    tapeLayoutFront: url("bludgeoned-tape-layout-front"),
+    sticker: url("bludgeoned-sticker"),
+    promoFlyer: url("bludgeoned-promo"),
   },
   cleanseTheSoul: {
-    logo: url("cleanse-logo.webp"),
-    flyer: url("cleanse-flyer.webp"),
+    logo: url("cleanse-logo"),
+    flyer: url("cleanse-flyer"),
   },
   rejoice: {
-    shirtFront: url("rejoice-shirt-front.webp"),
-    shirtBack: url("rejoice-shirt-back.webp"),
-    sticker: url("rejoice-stickers.webp"),
+    shirtFront: url("rejoice-shirt-front"),
+    shirtBack: url("rejoice-shirt-back"),
+    sticker: url("rejoice-stickers"),
+  },
+  siteAssets: {
+    portrait: url("bradon"),
   },
 } as const;

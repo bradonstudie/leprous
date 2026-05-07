@@ -1,4 +1,4 @@
-/* Arial Narrow, Prestige Elite */
+/* Arial Narrow */
 @import url("https://use.typekit.net/bdf6cab.css");
 /* Tailwind */
 @import "tailwindcss";
@@ -13,18 +13,8 @@ html {
 }
 
 body {
-  z-index: -100000;
-  background-image: url("./assets/wildlife.jpeg");
-
-  /* background: radial-gradient(
-    circle at 50% 50%,
-    #deff04 0%,
-    #fb2626 45%,
-    #0161d5 67%,
-    #046dff 70%,
-    #ff0000 100%
-  ); */
-
+  z-index: -1;
+  background-image: url("./assets/wildlife.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -40,25 +30,4 @@ body::after {
   opacity: 0.3;
   pointer-events: none;
   z-index: -1;
-}
-
-.font-prestige {
-  font-family: "prestige-elite-std", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* The typing effect — types over 3.5s (35% of 10s cycle), holds, then resets */
-@keyframes typing {
-  0% {
-    width: 0;
-    animation-timing-function: steps(40, end);
-  }
-  35% {
-    width: 100%;
-    animation-timing-function: step-end;
-  }
-  100% {
-    width: 0;
-  }
 }

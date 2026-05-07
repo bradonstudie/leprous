@@ -21,7 +21,7 @@ export const ProjectDirectory = ({ directoryItems }: PropTypes) => (
                   className="p-0 group-hover:bg-black group-hover:text-white 
                 group-hover:outline group-hover:outline-2 group-hover:outline-dashed 
                 group-hover:outline-white group-hover:[outline-offset:-2px]
-                transition-all duration-300 ease-in"
+                transition-all duration-500 ease-in"
                 >
                   <a
                     href={`#${directoryItem.href}`}
