@@ -12,7 +12,7 @@ export const HomeSplashSection = () => (
           of Bradon Studebaker
         </p>
         <p className="uppercase bg-black px-2 mt-1">Updated 2026-05-6</p>
-        <i className="uppercase bg-black px-2 mt-1">↓</i>
+        <p className="uppercase bg-black px-2 mt-1">↓</p>
       </div>
     </div>
   </div>
