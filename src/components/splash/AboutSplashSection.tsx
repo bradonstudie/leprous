@@ -2,7 +2,7 @@ import { ExternalLink } from "../ExternalLink";
 import { MEDIA } from "@/config";
 
 export const AboutSplashSection = () => (
-  <div className="flex-1 flex flex-col items-center text-center">
+  <div className="flex-1 flex flex-col items-center text-center px-3">
     <h1 className="uppercase text-2xl">About Me</h1>
     <p className="px-2 mt-1 w-sm">
       I am a designer, engineer, and illustrator working from Baltimore,

@@ -6,7 +6,7 @@ type PropTypes = {
 };
 
 export const LeprousNavigation = ({ navItems }: PropTypes) => (
-  <div className="flex flex-col md:flex-row w-screen items-center justify-between px-3 mt-5 gap-3 mb-5">
+  <div className="flex flex-col md:flex-row w-full items-center justify-between px-3 mt-5 gap-3 mb-5">
     <div className="flex flex-col md:flex-row items-center gap-3">
       <div className="flex text-lg">
         <div className="border-2 border-dashed rounded-full text-center w-8 h-8 flex items-center justify-center -mr-1">
@@ -33,8 +33,9 @@ export const LeprousNavigation = ({ navItems }: PropTypes) => (
             <li key={navItem.id}>
               <Link
                 href={navItem.href}
-                className="border-2 border-dashed rounded-none px-3 py-1 text-md uppercase 
-              hover:text-white hover:bg-black hover:rounded-[50px] 
+                className="border-2 border-dashed rounded-none px-3 py-1 text-md uppercase
+              hover:text-white hover:bg-black hover:rounded-[50px]
+              active:text-white active:bg-black active:rounded-[50px]
               transition-all duration-300 ease-in"
               >
                 {navItem.label}

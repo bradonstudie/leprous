@@ -25,13 +25,15 @@ html {
   animation: fade-in 750ms ease-in-out;
 }
 
-body {
-  z-index: -2;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
   background-image: url("./assets/wildlife.webp");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  z-index: -2;
 }
 
 /* BG Grain */
