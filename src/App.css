@@ -12,14 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100svh;
-  background-image: url("https://media.bradonstudebaker.com/v1/photos/wildlife.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 @keyframes fade-in {
   from {

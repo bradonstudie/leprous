@@ -28,6 +28,11 @@ function App() {
 
   return (
     <>
+      <div
+        aria-hidden="true"
+        className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url("https://media.bradonstudebaker.com/v1/photos/wildlife.webp")` }}
+      />
       <div className={splash ? "h-dvh flex flex-col" : undefined}>
         <LeprousNavigation navItems={NavItems} />
         {splash && (
