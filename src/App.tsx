@@ -33,24 +33,26 @@ function App() {
         className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url("https://media.bradonstudebaker.com/v1/photos/wildlife.webp")` }}
       />
-      <div className={splash ? "h-dvh flex flex-col" : undefined}>
-        <LeprousNavigation navItems={NavItems} />
-        {splash && (
-          <div key={location} className="splash-fade-in flex-1 flex flex-col">
-            {splash}
-          </div>
-        )}
-        {singleScreen && <LeprousFooter />}
+      <div className="h-svh overflow-y-auto">
+        <div className={splash ? "h-svh flex flex-col" : undefined}>
+          <LeprousNavigation navItems={NavItems} />
+          {splash && (
+            <div key={location} className="splash-fade-in flex-1 flex flex-col">
+              {splash}
+            </div>
+          )}
+          {singleScreen && <LeprousFooter />}
+        </div>
+
+        <main className={splash ? undefined : "min-h-svh"}>
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="/about" component={About} />
+          </Switch>
+        </main>
+
+        {!singleScreen && <LeprousFooter />}
       </div>
-
-      <main className={splash ? undefined : "min-h-dvh"}>
-        <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/about" component={About} />
-        </Switch>
-      </main>
-
-      {!singleScreen && <LeprousFooter />}
     </>
   );
 }
