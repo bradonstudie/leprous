@@ -12,6 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow: hidden;
+}
 
 @keyframes fade-in {
   from {
