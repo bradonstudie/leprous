@@ -10,9 +10,6 @@
 
 html {
   scroll-behavior: smooth;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 @keyframes fade-in {
@@ -26,17 +23,6 @@ html {
 
 .splash-fade-in {
   animation: fade-in 750ms ease-in-out;
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  inset: -200px;
-  background-image: url("./assets/wildlife.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -2;
 }
 
 /* BG Grain */

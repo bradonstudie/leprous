@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Route, Switch, useLocation } from "wouter";
 import "@/App.css";
+import wildlifeBg from "@/assets/wildlife.webp";
 
 import { LeprousFooter } from "@/layout/LeprousFooter";
 import { LeprousNavigation } from "@/layout/LeprousNavigation";
@@ -28,6 +29,11 @@ function App() {
 
   return (
     <>
+      <div
+        aria-hidden="true"
+        className="fixed -z-10 bg-cover bg-center bg-no-repeat"
+        style={{ inset: "-200px", backgroundImage: `url(${wildlifeBg})` }}
+      />
       <div className={splash ? "h-dvh flex flex-col" : undefined}>
         <LeprousNavigation navItems={NavItems} />
         {splash && (
