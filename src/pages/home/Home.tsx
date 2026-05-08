@@ -23,7 +23,5 @@ export const Home = () => (
       <RejoiceSection />
       <ImmortalTormentSection />
     </div>
-
-    <PageHeader text="Gallery" />
   </section>
 );

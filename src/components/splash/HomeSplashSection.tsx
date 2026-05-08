@@ -11,7 +11,7 @@ export const HomeSplashSection = () => (
           This website is the digital archive of Bradon Studebaker
         </p>
         <p className="uppercase bg-black px-2 mt-1">Updated 2026-05-6</p>
-        <p className="uppercase bg-black px-2 mt-1">↓</p>
+        <i className="uppercase bg-black px-2 mt-1">↓</i>
       </div>
     </div>
   </div>

@@ -30,7 +30,11 @@ function App() {
     <>
       <div className={splash ? "h-dvh flex flex-col" : undefined}>
         <LeprousNavigation navItems={NavItems} />
-        {splash}
+        {splash && (
+          <div key={location} className="splash-fade-in flex-1 flex flex-col">
+            {splash}
+          </div>
+        )}
         {singleScreen && <LeprousFooter />}
       </div>
 
