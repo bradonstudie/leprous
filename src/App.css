@@ -14,6 +14,7 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: calc(100lvh + 120px);
 }
 
 @keyframes fade-in {
@@ -32,13 +33,12 @@ html {
 html::before {
   content: "";
   position: fixed;
-  inset: 0;
+  inset: -200px;
   background-image: url("./assets/wildlife.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
-  min-height: calc(100lvh + 60px);
 }
 
 /* BG Grain */
