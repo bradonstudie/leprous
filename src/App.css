@@ -34,6 +34,7 @@ html::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
+  min-height: calc(100lvh + 60px);
 }
 
 /* BG Grain */
