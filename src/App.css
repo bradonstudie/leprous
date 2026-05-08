@@ -25,13 +25,10 @@ html {
   animation: fade-in 750ms ease-in-out;
 }
 
-body::before {
+html::before {
   content: "";
   position: fixed;
-  top: calc(-1 * env(safe-area-inset-top, 0px));
-  right: calc(-1 * env(safe-area-inset-right, 0px));
-  bottom: calc(-1 * env(safe-area-inset-bottom, 0px));
-  left: calc(-1 * env(safe-area-inset-left, 0px));
+  inset: 0;
   background-image: url("./assets/wildlife.webp");
   background-size: cover;
   background-position: center;
