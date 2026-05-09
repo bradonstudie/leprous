@@ -8,19 +8,15 @@ export const AboutSplashSection = () => (
       I am a designer, engineer, and illustrator working from Baltimore,
       Maryland across the physical and digital mediums.
     </p>
-    <img
-      src={MEDIA.siteAssets.portrait}
-      alt="A photo of me"
-      className="md:w-sm w-xs"
-    />
-    <p className="px-2 mt-1 w-sm">
+    <img src={MEDIA.siteAssets.portrait} alt="A photo of me" className="w-sm" />
+    <p className="px-2 mt-1 w-sm text-balance">
       If you would like to get in touch, please send me an email:
     </p>
     <ExternalLink
       href="mailto:bradon.studebaker@gmail.com"
       text="bradon.studebaker@gmail.com"
     />
-    <p className="px-2 mt-1 w-sm">
+    <p className="px-2 mt-1 w-sm text-balance">
       The hand coded source for this site is available on GitHub:
     </p>
     <ExternalLink
