@@ -28,8 +28,10 @@ export const ProjectDirectory = ({ directoryItems }: PropTypes) => (
                     className="block pl-8 pr-3 w-full flex justify-between items-center"
                   >
                     <span>
-                      {directoryItem.name} -{" "}
-                      <i>"{directoryItem.projectTitle}"</i>
+                      {directoryItem.name}
+                      <span className="md:inline hidden">
+                        - "{directoryItem.projectTitle}"
+                      </span>
                     </span>
                     <span className="text-sm">↓</span>
                   </a>

@@ -8,7 +8,11 @@ export const AboutSplashSection = () => (
       I am a designer, engineer, and illustrator working from Baltimore,
       Maryland across the physical and digital mediums.
     </p>
-    <img src={MEDIA.siteAssets.portrait} alt="A photo of me" className="w-sm" />
+    <img
+      src={MEDIA.siteAssets.portrait}
+      alt="A photo of me"
+      className="md:w-sm w-xs"
+    />
     <p className="px-2 mt-1 w-sm">
       If you would like to get in touch, please send me an email:
     </p>
