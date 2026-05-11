@@ -1,7 +1,6 @@
-import { DirectoryItems } from "@/config";
-
 import { PageHeader } from "@/components/PageHeader";
 import { ProjectDirectory } from "@/components/ProjectDirectory";
+import { DirectoryItems } from "@/config";
 
 import { BludgeonedByDeformitySection } from "./sections/BludgeonedByDeformitySection";
 import { CleanseTheSoulSection } from "./sections/CleanseTheSoulSection";

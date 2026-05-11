@@ -8,11 +8,6 @@
   -webkit-text-stroke: 1.5px currentColor;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-
 @keyframes fade-in {
   from {
     opacity: 0;

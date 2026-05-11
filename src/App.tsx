@@ -2,16 +2,13 @@ import type { ReactNode } from "react";
 import { Route, Switch, useLocation } from "wouter";
 import "@/App.css";
 
+import { NavItems } from "@/config";
 import { LeprousFooter } from "@/layout/LeprousFooter";
 import { LeprousNavigation } from "@/layout/LeprousNavigation";
-
 import { About } from "@/pages/about/About";
 import { Home } from "@/pages/home/Home";
-
-import { NavItems } from "@/config";
-
-import { HomeSplashSection } from "./components/splash/HomeSplashSection";
 import { AboutSplashSection } from "./components/splash/AboutSplashSection";
+import { HomeSplashSection } from "./components/splash/HomeSplashSection";
 
 type SplashConfig = { node: ReactNode; singleScreen?: boolean };
 
@@ -31,9 +28,11 @@ function App() {
       <div
         aria-hidden="true"
         className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url("https://media.bradonstudebaker.com/v1/photos/wildlife.webp")` }}
+        style={{
+          backgroundImage: `url("https://media.bradonstudebaker.com/v1/photos/wildlife.webp")`,
+        }}
       />
-      <div className="h-svh overflow-y-auto">
+      <div className="h-svh overflow-y-auto scroll-smooth">
         <div className={splash ? "h-svh flex flex-col" : undefined}>
           <LeprousNavigation navItems={NavItems} />
           {splash && (

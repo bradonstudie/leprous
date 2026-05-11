@@ -1,5 +1,5 @@
-import { ExternalLink } from "../ExternalLink";
 import { MEDIA } from "@/config";
+import { ExternalLink } from "../ExternalLink";
 
 export const AboutSplashSection = () => (
   <div className="flex-1 flex flex-col items-center text-center px-3">
@@ -8,7 +8,11 @@ export const AboutSplashSection = () => (
       I am a designer, engineer, and illustrator working from Baltimore,
       Maryland across the physical and digital mediums.
     </p>
-    <img src={MEDIA.siteAssets.portrait} alt="A photo of me" className="w-sm" />
+    <img
+      src={MEDIA.siteAssets.portrait}
+      alt="Portrait of Bradon Studebaker"
+      className="w-sm"
+    />
     <p className="px-2 mt-1 w-sm text-balance">
       If you would like to get in touch, please send me an email:
     </p>
